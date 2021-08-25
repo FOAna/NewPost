@@ -1,3 +1,5 @@
+@import url(./animations.css);
+
 .main__news,
 .main__post {
   margin: 16px 32px;
@@ -10,6 +12,7 @@
 
 .main__news {
   background: linear-gradient(to bottom, #d9a7c7, #fffcdc);
+  animation: 1s ease-in slideNews;
 }
 .main__newsSlider {
 }
