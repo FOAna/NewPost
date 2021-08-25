@@ -1,0 +1,86 @@
+body {
+  /* font-family: "Neucha", sans-serif; */
+  font-family: "Bellota Text", Arial, sans-serif;
+}
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(to right, #c3284d, #f76463);
+}
+.header__logo {
+  width: 64px;
+  height: 64px;
+}
+.header__menuDesktop {
+  width: 70%;
+  height: 100%;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.header__menuTouch {
+  display: none;
+}
+.header__menuList {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header__menuItem {
+  margin: 4px;
+  height: 100%;
+}
+.header__menuAnchor {
+  height: 100%;
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.header__menuAnchor:hover {
+  background: linear-gradient(to right, #f15256, #ff6b29);
+  font-weight: bolder;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+.header__authorized {
+  display: flex;
+  width: 64px;
+  flex-direction: column;
+  align-items: center;
+}
+.header__userIcon {
+  width: 64px;
+}
+.header__userName {
+  text-align: center;
+}
+.header__unauthorized {
+}
+.header__authorizedIcon {
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #fafafa, #3292e7);
+}
+.header__userIcon {
+}
+.header__logIn {
+}
+.header__signUp {
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 64px 100px;
+  box-sizing: border-box;
+}
