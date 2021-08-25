@@ -9,6 +9,7 @@ body {
   justify-content: space-around;
   align-items: center;
   background: linear-gradient(to right, #c3284d, #f76463);
+  animation: 1s ease-in slideHeader;
 }
 .header__logo {
   width: 64px;

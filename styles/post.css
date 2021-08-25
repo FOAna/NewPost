@@ -1,5 +1,6 @@
 .main__post {
   background: linear-gradient(to bottom, #4ac29a, #bdfff3);
+  animation: 1s ease-in slidePost;
 }
 .main__postSlider {
 }
