@@ -12,12 +12,6 @@
   .header__menuTouch {
     display: block;
   }
-  .header__menuList {
-  }
-  .header__menuItem {
-  }
-  .header__menuAnchor {
-  }
   .header__menuAnchor_news {
     padding-right: 8px;
   }
@@ -27,8 +21,6 @@
   .header__menuImg {
     width: 40px;
     height: 40px;
-  }
-  .header__authorized {
   }
   .header__authorizedIcon {
     width: 36px;
@@ -40,6 +32,33 @@
   .header__userName {
     font-size: 13px;
     line-height: 11px;
+  }
+  .main {
+    padding: 0;
+  }
+  .main__news,
+  .main__post {
+    margin: 0;
+    margin-bottom: 16px;
+    min-width: 288px;
+  }
+  .slideBlock,
+  .slider .item img {
+    width: 288px;
+  }
+  .slider {
+    margin: 0;
+  }
+  .main__newsItem,
+  .main__postItem {
+    flex-direction: column;
+  }
+  .main__newsItemImg,
+  .main__newsItemTags,
+  .main__postItemImg,
+  .main__postItemTags {
+    box-sizing: border-box;
+    width: 256px;
   }
 }
 

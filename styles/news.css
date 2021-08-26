@@ -5,7 +5,9 @@
   display: flex;
   flex-direction: column;
   justify-content: left;
-  width: 50%;
+  width: calc((100% - 328px) / 2);
+  flex-shrink: 0;
+  min-width: 476px;
 }
 
 .main__news {

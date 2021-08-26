@@ -1,6 +1,7 @@
 /* Собственно сам слайдер */
 .slider {
   max-width: 90%;
+  min-width: 288px;
   position: relative;
   width: 400px;
   height: 300px;
@@ -53,6 +54,7 @@
 .slideText {
   color: #fff;
   font-size: 28px;
+  text-decoration: none;
   /* Тень*/
   text-shadow: 1px 1px 1px #000, 0 0 1em #000;
 }

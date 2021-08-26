@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/news.css" />
     <link rel="stylesheet" href="./styles/post.css" />
-    <link rel="stylesheet" href="./styles/media.css" />
     <link rel="stylesheet" href="./styles/slider.css" />
+    <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="stylesheet" href="./styles/tags.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -65,24 +67,30 @@
           <div class="item">
             <img src="./images/chernushka.jpg" alt="Первый слайд" />
             <div class="slideBlock">
-              <p class="slideText">
+              <a class="slideText" href="https://lenta.ru/articles/2021/07/12/uk/?from=RCM-F6FE">
                 «Осталась бы, сейчас зажигала бы в Кремле и жила припеваючи» История россиянки,
                 перебравшейся в Великобританию.
-              </p>
+              </a>
             </div>
           </div>
 
           <div class="item">
             <img src="./images/zakat.jpg" alt="Второй слайд" />
-            <div class="slideText">
-              Краснодарский край начнет пускать только привитых россиян. Какие ограничения коснутся
-              туристов и как аннулировать путевку?
+            <div class="slideBlock">
+              <a class="slideText" href="https://lenta.ru/brief/2021/06/24/tolkoprivitym/">
+                Краснодарский край начнет пускать только привитых россиян. Какие ограничения
+                коснутся туристов и как аннулировать путевку?
+              </a>
             </div>
           </div>
 
           <div class="item">
             <img src="./images/skeleton.jpg" alt="Третий слайд" />
-            <div class="slideText">Здесь кто-то вмэр(((</div>
+            <div class="slideBlock">
+              <a class="slideText" href="https://www.litmir.me/br/?b=14087&p=1"
+                >Здесь кто-то вмэр(((</a
+              >
+            </div>
           </div>
 
           <a class="prev" onclick="minusSlide('news')">&#10094;</a>
@@ -138,17 +146,27 @@
         <div class="main__postSlider slider">
           <div class="item">
             <img src="./images/matrix.jpg" alt="Первый слайд" />
-            <div class="slideText">Матрица: Злодеи и Спасители</div>
+            <div class="slideBlock">
+              <a class="slideText" href="https://habr.com/ru/post/367899/"
+                >Матрица: Злодеи и Спасители</a
+              >
+            </div>
           </div>
 
           <div class="item">
             <img src="./images/elektro.jpg" alt="Второй слайд" />
-            <div class="slideText">Сознание и существование. Квантовая механика без парадоксов</div>
+            <div class="slideBlock">
+              <a class="slideText" href="https://habr.com/ru/post/489760/">
+                Сознание и существование. Квантовая механика без парадоксов
+              </a>
+            </div>
           </div>
 
           <div class="item">
             <img src="./images/woman.jpeg" alt="Третий слайд" />
-            <div class="slideText">Девчуля</div>
+            <div class="slideBlock">
+              <a class="slideText" href="https://libbox.ru/books/ischeznuvshaya">Девчуля</a>
+            </div>
           </div>
 
           <a class="prev" onclick="minusSlide('post')">&#10094;</a>
@@ -208,5 +226,19 @@
         </article>
       </section>
     </main>
+    <article class="tags">
+      <ul class="tags__list">
+        <li class="tags__listItem"><a class="tags__listAnchor" href="#">Комиксы</a></li>
+        <li class="tags__listItem"><a class="tags__listAnchor" href="#">История из жизни</a></li>
+        <li class="tags__listItem"><a class="tags__listAnchor" href="#">Мемы</a></li>
+        <li class="tags__listItem"><a class="tags__listAnchor" href="#">Фильмы</a></li>
+        <li class="tags__listItem"><a class="tags__listAnchor" href="#">Эротика</a></li>
+        <li class="tags__listItem"><a class="tags__listAnchor" href="#">Игра престолов</a></li>
+      </ul>
+      <img class="tags__nyan" src="./images/nyancat.gif" alt="Нян кэт" />
+    </article>
+    <footer class="footer">
+      <span class="footer__developer">&copy; Анастасия Перова</span>
+    </footer>
   </body>
 </html>
