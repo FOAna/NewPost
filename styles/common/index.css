@@ -40,17 +40,23 @@ body {
   height: 100%;
 }
 .header__menuAnchor {
+  position: relative;
   height: 100%;
   display: block;
   padding: 16px;
   text-decoration: none;
   color: black;
+  z-index: 2;
 }
 .header__menuAnchor:hover {
   background: linear-gradient(to right, #f15256, #ff6b29);
   font-weight: bolder;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
+  color: black;
+}
+.headerCurrentPage {
+  color: #f8f8ff;
 }
 .header__authorized {
   display: flex;

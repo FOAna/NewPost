@@ -24,7 +24,11 @@
 }
 .tags__nyan {
   position: absolute;
-  top: 0;
+  top: -10px;
   right: 0;
   height: 120%;
+}
+.tags_news {
+  background: linear-gradient(to bottom, #ffeeee, #ddefbb);
+  border-radius: 30px;
 }

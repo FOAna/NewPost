@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/@csstools/normalize.css" />
     <link rel="stylesheet" href="./styles/common/index.css" />
     <link rel="stylesheet" href="./styles/newsPage/newsPage.css" />
+    <link rel="stylesheet" href="./styles/common/tags.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,7 +28,9 @@
           <li class="header__menuItem">
             <a href="./index.html" class="header__menuAnchor">Главная</a>
           </li>
-          <li class="header__menuItem"><a href="#" class="header__menuAnchor">Новости</a></li>
+          <li class="header__menuItem">
+            <a href="#" class="header__menuAnchor headerCurrentPage">Новости</a>
+          </li>
           <li class="header__menuItem"><a href="#" class="header__menuAnchor">Статьи</a></li>
         </ul>
       </nav>
@@ -58,7 +61,18 @@
     </header>
 
     <main class="newsMain">
-      <div class="newsMain__block">
+      <article class="tags tags_news">
+        <ul class="tags__list">
+          <li class="tags__listItem"><a class="tags__listAnchor" href="#">Комиксы</a></li>
+          <li class="tags__listItem"><a class="tags__listAnchor" href="#">История из жизни</a></li>
+          <li class="tags__listItem"><a class="tags__listAnchor" href="#">Мемы</a></li>
+          <li class="tags__listItem"><a class="tags__listAnchor" href="#">Фильмы</a></li>
+          <li class="tags__listItem"><a class="tags__listAnchor" href="#">Эротика</a></li>
+          <li class="tags__listItem"><a class="tags__listAnchor" href="#">Игра престолов</a></li>
+        </ul>
+        <img class="tags__nyan" src="./images/nyancat.gif" alt="Нян кэт" />
+      </article>
+      <div class="newsMain__block gridImg">
         <a
           class="newsMain__newImg newImg first"
           href="https://meduza.io/feature/2021/08/28/till-lindemann-priehal-v-tverskuyu-oblast-chtoby-vystupit-na-festivale-mestnogo-biznesmena-svyazannogo-s-partiey-rodina-v-otel-k-muzykantu-prishla-politsiya"
@@ -68,7 +82,7 @@
             class="newImg__img"
             src="https://meduza.io/impro/pd2nIblG95IjTeWFNIXez1wiNkLzT3lN1iENqht-CH4/fill/0/0/ce/1/aHR0cHM6Ly9tZWR1/emEuaW8vaW1hZ2Uv/YXR0YWNobWVudHMv/aW1hZ2VzLzAwNy8w/MTYvMzAwL3doXzYx/NV80MTAvdkhUVWFL/b2xzaks5QnZsTlB5/MTBMZy5qcGc.webp"
             alt="Тиллька"
-            height="400px"
+            height="500px"
           />
           <div class="newImg__text">
             <span class="newImg__tag">Новость</span>
@@ -89,7 +103,7 @@
             class="newImg__img"
             src="https://meduza.io/impro/yQt2wgbfkaTZ179y0cUayLXJApfScWyNCN77z2vBS7Y/fill/0/0/ce/1/aHR0cHM6Ly9tZWR1/emEuaW8vaW1hZ2Uv/YXR0YWNobWVudHMv/aW1hZ2VzLzAwNy8w/MTcvMTkzL3doXzYx/NV80MTAvTENoVEV4/VElBdnFpaUtMOU1W/WXZyUS5qcGc.webp"
             alt="Ёбидоёби"
-            height="400px"
+            height="500px"
           />
           <div class="newImg__text">
             <span class="newImg__tag">Новость</span>
@@ -100,11 +114,126 @@
             <time class="newImg__time">день назад</time>
           </div>
         </a>
-        <div class="third"></div>
-        <div class="fourth"></div>
-        <div class="fifth"></div>
+        <a
+          class="newsMain__newImgBlock newImgBlock third"
+          href="https://meduza.io/feature/2021/08/30/komik-idrak-mirzalizade-poshutil-o-russkih-i-emu-zapretili-zhit-v-rossii-tsepochka-sobytiy"
+          target="_blank"
+        >
+          <img
+            class="newImgBlock__img"
+            src="https://meduza.io/impro/e1mp6U_dg-ACBgwPK0jwvM09ihTUv1VIeu4ICV5wmWU/fill/0/0/ce/1/aHR0cHM6Ly9tZWR1/emEuaW8vaW1hZ2Uv/YXR0YWNobWVudHMv/aW1hZ2VzLzAwNy8w/MTkvNDUwL3doXzgx/MF81NDAvbzJfUUJH/VnJhelFadWdYZ0Ux/bFdQQS5qcGc.webp"
+            alt="Идрак"
+            height="300px"
+          />
+          <div class="newImgBlock__text">
+            <span class="newImgBlock__tag">Новость</span>
+            <h2 class="newImgBlock__title">
+              Комик Идрак Мирзализаде пошутил о русских — и ему запретили жить в России. Цепочка
+              событий
+            </h2>
+            <time class="newImgBlock__time">7 часов назад</time>
+          </div>
+        </a>
+        <a
+          class="newsMain__newImgBlock newImgBlock fourth"
+          href="https://meduza.io/feature/2021/08/31/devyat-idealnyh-neznakomtsev-nikol-kidman-igraet-russkuyu-vladelitsu-zagadochnogo-velnes-tsentra"
+          target="_blank"
+        >
+          <img
+            class="newImgBlock__img"
+            src="https://meduza.io/impro/HvO6my9uVpcSxr_8zklu-4NkHgUYK5TTKwV1NJREm1M/fill/0/0/ce/1/aHR0cHM6Ly9tZWR1/emEuaW8vaW1hZ2Uv/YXR0YWNobWVudHMv/aW1hZ2VzLzAwNy8w/MTkvMTQ0L3doXzgx/MF81NDAvU3NBNFhJ/Qm5jT1ZpOGpTMmda/SXJRUS5qcGc.webp"
+            alt="Николь Кидман"
+            height="300px"
+          />
+          <div class="newImgBlock__text">
+            <span class="newImgBlock__tag">Новость</span>
+            <h2 class="newImgBlock__title">
+              «Девять идеальных незнакомцев» — Николь Кидман играет русскую владелицу загадочного
+              велнес-центра
+            </h2>
+            <time class="newImgBlock__time">час назад</time>
+          </div>
+        </a>
+        <a
+          class="newsMain__newImgBlock newImgBlock fifth"
+          href="https://meduza.io/shapito/2021/08/31/mer-zheleznovodska-pridumal-slogan-dlya-velokurorta-radost-mezhdu-nog-a-potom-obidelsya-na-kritiku-i-poshel-voevat-v-kommentariyah-s-poteryannymi-dushami"
+          target="_blank"
+        >
+          <img
+            class="newImgBlock__img"
+            src="https://meduza.io/impro/V-n9WAUVvg4QCKiLEn6MjL51bwW7RZ7Lp7lzTgSlUps/fill/0/0/ce/1/aHR0cHM6Ly9tZWR1/emEuaW8vaW1hZ2Uv/YXR0YWNobWVudHMv/aW1hZ2VzLzAwNy8w/MjIvOTgyL3doXzgx/MF81NDAvUTFqY3k3/dWI2OUtrazBLV1d0/dFhoQS5qcGc.webp"
+            alt="Радость"
+            height="300px"
+          />
+          <div class="newImgBlock__text">
+            <span class="newImgBlock__tag">Новость</span>
+            <h2 class="newImgBlock__title">
+              Мэр Железноводска придумал слоган для велокурорта — «Радость между ног». А потом
+              обиделся на критику и пошел воевать в комментариях с «потерянными душами»
+            </h2>
+            <time class="newImgBlock__time">неделю назад</time>
+          </div>
+        </a>
       </div>
-      <div class="newsMain__block"></div>
+      <div class="newsMain__block gridText">
+        <a
+          class="newsMain__newBlock newBlock firstText"
+          href="https://meduza.io/news/2021/08/31/cnn-taliban-sozdast-v-afganistane-sistemu-upravleniya-kak-v-irane-s-verhovnym-liderom-kotoryy-budet-glavnym-politicheskim-i-religioznym-avtoritetom"
+          target="_blank"
+        >
+          <span class="newBlock__tagBig">Новость</span>
+          <h2 class="newBlock__titleBig">
+            CNN: «Талибан» создаст в Афганистане систему управления, как в Иране — с верховным
+            лидером, который будет главным политическим и религиозным авторитетом
+          </h2>
+          <time class="newBlock__timeBig">час назад</time>
+        </a>
+        <a
+          class="newsMain__newBlock newBlock secondText"
+          href="https://meduza.io/news/2021/08/31/navalnyy-rasskazal-o-30-vygovorah-v-kolonii-i-poprosil-rasshifrovat-slovo-b-t"
+          target="_blank"
+        >
+          <span class="newBlock__tag">Новость</span>
+          <h2 class="newBlock__title">
+            Навальный рассказал о 30 выговорах в колонии и попросил расшифровать слово «Б…ть»
+          </h2>
+          <time class="newBlock__time">3 часа назад</time>
+        </a>
+        <a
+          class="newsMain__newBlock newBlock thirdText"
+          href="https://meduza.io/news/2021/08/31/v-moskve-lyudi-so-spinalnoy-myshechnoy-atrofiey-vyshli-na-pikety-k-zdaniyu-merii-oni-prosyat-obespechit-ih-zhiznenno-neobhodimym-lecheniem"
+          target="_blank"
+        >
+          <span class="newBlock__tag">Новость</span>
+          <h2 class="newBlock__title">
+            В Москве люди со спинальной мышечной атрофией вышли на пикеты к зданию мэрии. Они просят
+            обеспечить их жизненно необходимым лечением
+          </h2>
+          <time class="newBlock__time">2 часа назад</time>
+        </a>
+        <a
+          class="newsMain__newBlock newBlock fourthText"
+          href="https://meduza.io/news/2021/08/31/aeroflot-poobeschal-uvelichit-zarplaty-bortprovodnikam-i-pilotam"
+          target="_blank"
+        >
+          <span class="newBlock__tag">Новость</span>
+          <h2 class="newBlock__title">
+            «Аэрофлот» пообещал увеличить зарплаты бортпроводникам и пилотам
+          </h2>
+          <time class="newBlock__time">4 часа назад</time>
+        </a>
+        <a
+          class="newsMain__newBlock newBlock fifthText"
+          href="https://meduza.io/news/2021/08/31/prezidentom-estonii-izbran-direktor-natsionalnogo-muzeya-alar-karis"
+          target="_blank"
+        >
+          <span class="newBlock__tag">Новость</span>
+          <h2 class="newBlock__title">
+            Президентом Эстонии избран директор Национального музея Алар Карис
+          </h2>
+          <time class="newBlock__time">4 часа назад</time>
+        </a>
+      </div>
     </main>
 
     <footer class="footer">
