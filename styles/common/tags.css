@@ -16,6 +16,10 @@
 .tags__listItem {
   list-style: none;
   margin: 8px;
+  padding: 4px;
+}
+.tags__listItem:hover {
+  background-color: rgba(255, 185, 92, 0.6);
 }
 .tags__listAnchor {
   text-decoration: none;
@@ -29,6 +33,13 @@
   height: 120%;
 }
 .tags_news {
-  background: linear-gradient(to bottom, #ffeeee, #ddefbb);
+  background: linear-gradient(to bottom, #c8e0ff, #cfffff, #f6c6d5);
   border-radius: 30px;
+}
+.tags_post {
+  background: linear-gradient(to bottom, #530000, #200122);
+  border-radius: 30px;
+}
+.tags__listAnchor_post {
+  color: #f6c6d5;
 }

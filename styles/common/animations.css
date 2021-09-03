@@ -45,3 +45,13 @@
     opacity: 1;
   }
 }
+
+@keyframes slideNewsPage {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(1%);
+  }
+}

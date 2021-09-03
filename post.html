@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Статьи</title>
+    <link rel="icon" href="./images/iconStars.png" type="image/png" />
+    <link rel="stylesheet" href="./node_modules/reset-css/reset.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@csstools/normalize.css" />
+    <link rel="stylesheet" href="./styles/common/index.css" />
+    <link rel="stylesheet" href="./styles/newsPage/newsPage.css" />
+    <link rel="stylesheet" href="./styles/common/tags.css" />
+    <link rel="stylesheet" href="./styles/common/animations.css" />
+    <link rel="stylesheet" href="./styles/newsPage/media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@400;700&family=Neucha&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a class="header_logo" href="#"
+        ><img class="header__logo" src="./images/logo.svg" alt="Билл Шифр"
+      /></a>
+      <nav class="header__menuDesktop">
+        <ul class="header__menuList">
+          <li class="header__menuItem">
+            <a href="./index.html" class="header__menuAnchor">Главная</a>
+          </li>
+          <li class="header__menuItem">
+            <a href="./news.html" class="header__menuAnchor">Новости</a>
+          </li>
+          <li class="header__menuItem">
+            <a href="#" class="header__menuAnchor headerCurrentPage">Статьи</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="header__menuTouch">
+        <ul class="header__menuList">
+          <li class="header__menuItem">
+            <a href="#" class="header__menuAnchor header__menuAnchor_news"
+              ><img class="header__menuImg" src="./images/news.svg" alt="Новости"
+            /></a>
+          </li>
+          <li class="header__menuItem">
+            <a href="#" class="header__menuAnchor header__menuAnchor_posts"
+              ><img class="header__menuImg" src="./images/post.svg" alt="Статьи"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__authorized" href="./account.html">
+        <div class="header__authorizedIcon">
+          <img class="header__userIcon" src="./images/mabel.png" alt="Пользователь" />
+        </div>
+        <span class="header__userName">Имя пользователя</span>
+      </a>
+      <!-- <div class="header__unauthorized">
+      <a class="header__logIn" href="#">Вход</a>
+      <a class="header__signUp" href="#">Регистрация</a>
+    </div> -->
+    </header>
+
+    <main class="newsMain">
+      <article class="tags tags_post">
+        <ul class="tags__list tags__list_post">
+          <li class="tags__listItem">
+            <a class="tags__listAnchor tags__listAnchor_post" href="#">Комиксы</a>
+          </li>
+          <li class="tags__listItem">
+            <a class="tags__listAnchor tags__listAnchor_post" href="#">История из жизни</a>
+          </li>
+          <li class="tags__listItem">
+            <a class="tags__listAnchor tags__listAnchor_post" href="#">Мемы</a>
+          </li>
+          <li class="tags__listItem">
+            <a class="tags__listAnchor tags__listAnchor_post" href="#">Фильмы</a>
+          </li>
+          <li class="tags__listItem">
+            <a class="tags__listAnchor tags__listAnchor_post" href="#">Эротика</a>
+          </li>
+          <li class="tags__listItem">
+            <a class="tags__listAnchor tags__listAnchor_post" href="#">Игра престолов</a>
+          </li>
+        </ul>
+        <img class="tags__nyan" src="./images/nyancat.gif" alt="Нян кэт" />
+      </article>
+      <div class="newsMain__block postMain__block gridImg">
+        <a
+          class="newsMain__newImg newImg first"
+          href="https://habr.com/ru/post/367899/"
+          target="_blank"
+        >
+          <img class="newImg__img" src="./images/matrix.jpg" alt="Матрица" height="500px" />
+          <div class="newImg__text postImg__text">
+            <span class="newImg__tag postImg__tag">Статья</span>
+            <h2 class="newImg__title postImg__title">
+              Матрица: Злодеи и Спасители. Две большие непротиворечивые теории о Матрице
+            </h2>
+            <time class="newImg__time postImg__time">14.08.2021</time>
+          </div>
+        </a>
+        <a
+          class="newsMain__newImg newImg second"
+          href="https://www.the-village.ru/business/office/176795-kak-rabotayut-v-yandekse"
+          target="_blank"
+        >
+          <img class="newImg__img" src="./images/yandex.png" alt="Яндекс" height="500px" />
+          <div class="newImg__text postImg__text">
+            <span class="newImg__tag postImg__tag">Статья</span>
+            <h2 class="newImg__title postImg__title">
+              Как работают в «Яндексе»? Массажный салон, кружок игры на арфе и возможность завести
+              змею - условия работы разработчиков российского поисковика
+            </h2>
+            <time class="newImg__time postImg__time">25.07.2021</time>
+          </div>
+        </a>
+        <a
+          class="newsMain__newImgBlock newImgBlock postImgBlock third"
+          href="https://meduza.io/feature/2021/08/09/mozhet-li-poyavitsya-shtamm-kovida-ot-kotorogo-ne-zaschityat-vaktsiny-kogda-eto-sluchitsya-i-kak-etomu-protivostoyat"
+          target="_blank"
+        >
+          <img
+            class="newImgBlock__img"
+            src="https://meduza.io/impro/Zq21hZF1hE1Zp611kXHptZ5dtpV7WiwG-oB-NFrVG78/fill/0/0/ce/1/aHR0cHM6Ly9tZWR1/emEuaW8vaW1hZ2Uv/YXR0YWNobWVudHMv/aW1hZ2VzLzAwNi85/NjAvOTU1L3doXzgx/MF81NDAvZTRCWWRz/RUJwSi1ua1U0Vkta/enBFZy5qcGc.webp"
+            alt="Снова корона"
+            height="300px"
+          />
+          <div class="newImgBlock__text postImgBlock__text">
+            <span class="newImgBlock__tag postImgBlock__tag">Статья</span>
+            <h2 class="newImgBlock__title postImgBlock__title">
+              Может ли появиться штамм коронавируса, от которого не защитят вакцины? Когда это
+              случится? И как этому противостоять?
+            </h2>
+            <time class="newImgBlock__time postImgBlock__time">день назад</time>
+          </div>
+        </a>
+        <a
+          class="newsMain__newImgBlock newImgBlock postImgBlock fourth"
+          href="https://www.the-village.ru/weekend/tv/fall-series-2021"
+          target="_blank"
+        >
+          <img
+            class="newImgBlock__img"
+            src="https://img.the-village.ru/4eM0e-1kMvfRXRvSm076a2KoCpuTakaWETE8bPrsQw8/rs:fill:940:630/q:88/plain/2021/08/27/940SE_303_Unit_00509_RT.jpg"
+            alt="Сериалы"
+            height="300px"
+          />
+          <div class="newImgBlock__text postImgBlock__text">
+            <span class="newImgBlock__tag postImgBlock__tag">Сериалы</span>
+            <h2 class="newImgBlock__title postImgBlock__title">
+              12 сериалов осени: «Наследники», «Великая» и «Половое воспитание» и другие. Подберём
+              уютное спасение от холодных вечеров
+            </h2>
+            <time class="newImgBlock__time postImgBlock__time">2 дня назад</time>
+          </div>
+        </a>
+        <a
+          class="newsMain__newImgBlock newImgBlock postImgBlock fifth"
+          href="https://www.the-village.ru/weekend/novaya-muzyka/ooes"
+          target="_blank"
+        >
+          <img
+            class="newImgBlock__img"
+            src="https://img.the-village.ru/HLBjr11bxBJBAgyEZXcoAqIZnHQE7b7zDq8heRJJYig/rs:fill:940:630/q:88/plain/2021/08/18/940.jpg"
+            alt="В зарослях"
+            height="300px"
+          />
+          <div class="newImgBlock__text postImgBlock__text">
+            <span class="newImgBlock__tag">Новая музыка</span>
+            <h2 class="newImgBlock__title postImgBlock__title">
+              Из церковного хора — в топ стримингов: История певицы Ooes
+            </h2>
+            <time class="newImgBlock__time postImgBlock__time">18.08.2021</time>
+          </div>
+        </a>
+      </div>
+      <div class="newsMain__block postMain__block gridText">
+        <a
+          class="newsMain__newBlock newBlock firstText"
+          href="https://www.the-village.ru/city/the-village-guide/grinvoshing"
+          target="_blank"
+        >
+          <span class="newBlock__tagBig postBlock__tag">Гид</span>
+          <h2 class="newBlock__titleBig postBlock__title">
+            Бренды заставляют всех быть экологичными, но обманывают нас. Как не купиться на зелёные
+            уловки
+          </h2>
+          <time class="newBlock__timeBig postBlock__time">01.09.2021</time>
+        </a>
+        <a
+          class="newsMain__newBlock newBlock secondText"
+          href="https://habr.com/ru/post/489760/"
+          target="_blank"
+        >
+          <span class="newBlock__tag postBlock__tag">Физика</span>
+          <h2 class="newBlock__title postBlock__title">
+            Сознание и существование. Квантовая механика без парадоксов
+          </h2>
+          <time class="newBlock__time postBlock__time">04.08.2021</time>
+        </a>
+        <a
+          class="newsMain__newBlock newBlock thirdText"
+          href="https://www.the-village.ru/city/stories/komarovo"
+          target="_blank"
+        >
+          <span class="newBlock__tag postBlock__tag">Истории</span>
+          <h2 class="newBlock__title postBlock__title">
+            Самый интеллигентный поселок России: Как живет Комарово Золотая земля Лосиного болота
+          </h2>
+          <time class="newBlock__time postBlock__time">неделю назад</time>
+        </a>
+        <a
+          class="newsMain__newBlock newBlock fourthText"
+          href="https://www.the-village.ru/city/react/mbh-om-otkrytka"
+          target="_blank"
+        >
+          <span class="newBlock__tag postBlock__tag">Реакция</span>
+          <h2 class="newBlock__title postBlock__title">
+            «Для начала хотелось бы не сесть» Что говорят бывшие сотрудники «Открытых медиа»,
+            «Правозащиты Открытки» и «МБХ медиа» после блокировок
+          </h2>
+          <time class="newBlock__time postBlock__time">05.08.2021</time>
+        </a>
+        <a
+          class="newsMain__newBlock newBlock fifthText"
+          href="https://www.the-village.ru/city/stories/rubinshteyna-dumskaya"
+          target="_blank"
+        >
+          <span class="newBlock__tag postBlock__tag">Истории</span>
+          <h2 class="newBlock__title postBlock__title">
+            «Думская-2»: Как улица Рубинштейна перестала быть модной
+          </h2>
+          <time class="newBlock__time postBlock__time">06.08.2021</time>
+        </a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span class="footer__developer">&copy; Анастасия Перова</span>
+    </footer>
+  </body>
+</html>

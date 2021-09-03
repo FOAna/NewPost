@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лапочка</title>
+    <link rel="icon" href="./images/iconStars.png" type="image/png" />
+    <link rel="stylesheet" href="./node_modules/reset-css/reset.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@csstools/normalize.css" />
+    <link rel="stylesheet" href="./styles/common/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@400;700&family=Neucha&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a class="header_logo" href="#" target="_blank">
+        <img class="header__logo" src="./images/logo.svg" alt="Билл Шифр" width="64" height="64" />
+      </a>
+      <nav class="header__menuDesktop">
+        <ul class="header__menuList">
+          <li class="header__menuItem">
+            <a href="#" class="header__menuAnchor headerCurrentPage">Главная</a>
+          </li>
+          <li class="header__menuItem">
+            <a href="./news.html" class="header__menuAnchor">Новости</a>
+          </li>
+          <li class="header__menuItem">
+            <a href="./post.html" class="header__menuAnchor">Статьи</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="header__menuTouch">
+        <ul class="header__menuList">
+          <li class="header__menuItem">
+            <a href="#" class="header__menuAnchor header__menuAnchor_news" target="_blank">
+              <img class="header__menuImg" src="./images/news.svg" alt="Новости" />
+            </a>
+          </li>
+          <li class="header__menuItem">
+            <a href="#" class="header__menuAnchor header__menuAnchor_posts" target="_blank">
+              <img class="header__menuImg" src="./images/post.svg" alt="Статьи" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__authorized" target="_blank">
+        <div class="header__authorizedIcon">
+          <img class="header__userIcon" src="./images/mabel.png" alt="Пользователь" />
+        </div>
+        <span class="header__userName">Имя пользователя</span>
+      </a>
+      <!-- <div class="header__unauthorized">
+    <a class="header__logIn" href="#">Вход</a>
+    <a class="header__signUp" href="#">Регистрация</a>
+  </div> -->
+    </header>
+
+    <main class="account">
+      <section class="account__info"></section>
+    </main>
+
+    <footer class="footer">
+      <span class="footer__developer">&copy; Анастасия Перова</span>
+    </footer>
+  </body>
+</html>

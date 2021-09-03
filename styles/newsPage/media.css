@@ -1,0 +1,67 @@
+@media (min-width: 801px) and (max-width: 1023px) {
+  .gridImg {
+    grid-template-columns: 1fr 1fr 0.5fr 0.5fr 1fr;
+    grid-template-areas:
+      "first first first first first"
+      "fourth fourth third third third"
+      "second second second fifth fifth";
+  }
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+  .gridImg {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "first"
+      "third"
+      "fourth"
+      "fifth"
+      "second";
+  }
+  .gridText {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: unset;
+    grid-template-areas:
+      "firstText firstText"
+      "none2 secondText"
+      "thirdText none3"
+      "none4 fourthText"
+      "fifthText none5";
+  }
+  .tags__nyan {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .gridImg {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "first"
+      "third"
+      "fourth"
+      "fifth"
+      "second";
+  }
+  .gridText {
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+    grid-template-areas:
+      "firstText"
+      "secondText"
+      "thirdText"
+      "fourthText"
+      "fifthText";
+  }
+  .newImg__title,
+  .newImgBlock__title,
+  .newBlock__titleBig {
+    font-size: 20px;
+  }
+  .newBlock__tagBig {
+    font-size: 16px;
+  }
+  .tags__nyan {
+    display: none;
+  }
+}

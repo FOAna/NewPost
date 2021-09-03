@@ -4,12 +4,16 @@
 
 .newsMain__block {
   width: 100%;
-  background: linear-gradient(to bottom, #ffeeee, #ddefbb);
+  background: linear-gradient(to bottom, #c8e0ff, #cfffff, #f6c6d5);
   border-radius: 30px;
   display: grid;
   padding: 20px;
   box-sizing: border-box;
   margin-bottom: 16px;
+  animation: 1.5s ease-in slideNewsPage;
+}
+.postMain__block {
+  background: linear-gradient(to bottom, #530000, #200122);
 }
 .gridImg {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /* размер каждой колонки, fr - часть целого*/
@@ -56,20 +60,37 @@
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
+.postImg__text {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 1)
+  );
+}
 .newImg__tag {
   color: #cfdef3;
   font-size: 18px;
   font-weight: bold;
   text-shadow: #fff -1px -1px 0, #333 1px 1px 0;
 }
+/* .postImg__tag {
+  color: #3f0000;
+  text-shadow: rgb(59, 20, 20) -1px -1px 0, rgb(255, 214, 214) 1px 1px 0;
+} */
 .newImg__title {
   font-size: 30px;
   font-weight: bold;
   color: white;
   padding: 8px 0;
 }
+.postImg__title {
+  color: black;
+}
 .newImg__time {
   color: #dae2f8;
+}
+.postImg__time {
+  color: rgb(32, 3, 3);
 }
 
 .newImgBlock {
@@ -77,6 +98,9 @@
   border-radius: 16px;
   height: 100%;
   text-decoration: none;
+}
+.postImgBlock {
+  background-color: black;
 }
 .newImgBlock__img {
   object-fit: cover;
@@ -102,8 +126,14 @@
   color: #000;
   padding: 8px 0;
 }
+.postImgBlock__title {
+  color: #fff;
+}
 .newImgBlock__time {
   color: #090b17;
+}
+.postImgBlock__time {
+  color: rgb(250, 228, 228);
 }
 
 .gridText {
@@ -139,6 +169,8 @@
 
 .newBlock {
   text-decoration: none;
+}
+.newBlock:first-child {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -165,13 +197,23 @@
   font-weight: bold;
   text-shadow: #333 -1px -1px 0, #fff 1px 1px 0;
 }
+.postBlock__tag {
+  color: rgb(255, 149, 149);
+  text-shadow: none;
+}
 .newBlock__title {
   font-size: 18px;
   font-weight: bold;
   color: #000;
   padding: 8px 0;
 }
+.postBlock__title {
+  color: #fff;
+}
 .newBlock__time {
   color: #090b17;
   font-size: 14px;
+}
+.postBlock__time {
+  color: #f6c6d5;
 }
