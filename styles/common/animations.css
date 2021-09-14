@@ -55,3 +55,15 @@
     transform: translateY(1%);
   }
 }
+
+@keyframes appearanceForm {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+
+  to {
+    height: 620px;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,233 @@
+.account {
+  padding: 32px;
+}
+.account__info {
+  width: 100%;
+  background: linear-gradient(to bottom, #e0fffd, #cff7ff);
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+  box-sizing: border-box;
+}
+.account__infoElement:not(:last-child) {
+  margin-right: 24px;
+}
+.account__img {
+  object-fit: cover;
+  object-position: top;
+}
+.account__text {
+  width: 100%;
+}
+.acoount__up {
+  display: flex;
+  justify-content: space-between;
+}
+.account__loginProf {
+}
+.account__login {
+  font-size: 40px;
+  font-weight: bold;
+}
+.account__prof {
+  font-size: 20px;
+  line-height: 50px;
+}
+.account__data {
+  display: flex;
+}
+.account__dataItem {
+  margin: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dataItem {
+}
+.dataItem__img {
+  margin: 12px;
+}
+.dataItem__title {
+}
+.account__down {
+  width: 100%;
+  background-color: rgb(138, 182, 240);
+  padding: 16px;
+  box-sizing: border-box;
+}
+.account__button {
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  margin-right: 16px;
+  font-family: "Neucha", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 8px;
+  background-color: cornflowerblue;
+}
+.account__button:hover {
+  background-color: darkblue;
+  color: rgb(214, 214, 252);
+}
+.account__bigButton {
+  border: none;
+  outline: none;
+  padding: 16px 40px;
+  font-family: "Neucha", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgb(164, 100, 237);
+  margin-top: 32px;
+  text-align: center;
+}
+.account__bigButton:hover {
+  background-color: rgb(66, 4, 102);
+  color: rgb(229, 195, 245);
+}
+
+.account__decor {
+  position: relative;
+  margin: 50px 64px 0;
+  background: white;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+.account__leftDecor,
+.account__rightDecor {
+  position: absolute;
+}
+.account__form-left-decoration-mid,
+.account__form-right-decoration-mid {
+  width: 50px;
+  height: 20px;
+  background: #f69a73;
+  border-radius: 20px;
+}
+.account__leftDecor {
+  bottom: 60px;
+  left: -30px;
+}
+.account__rightDecor {
+  top: 60px;
+  right: -30px;
+}
+.account__form-left-decoration-top,
+.account__form-left-decoration-bot,
+.account__form-right-decoration-top,
+.account__form-right-decoration-bot {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  border-radius: 30px;
+  background: white;
+}
+.account__form-left-decoration-top {
+  top: -20px;
+}
+.account__form-left-decoration-bot {
+  top: 20px;
+  left: 10px;
+}
+.account__form-right-decoration-top {
+  top: -20px;
+  right: 0;
+}
+.account__form-right-decoration-bot {
+  top: 20px;
+  right: 10px;
+}
+.account__circle {
+  position: absolute;
+  bottom: 80px;
+  left: -55px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+}
+.account__form-inner {
+  padding: 50px;
+  box-sizing: border-box;
+}
+.account__form-inner input,
+.account__form-inner textarea {
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  background: #e9eff6;
+  line-height: 40px;
+  border-width: 0;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+.account__form-inner input[type="submit"] {
+  margin-top: 30px;
+  background: #f69a73;
+  border-bottom: 4px solid #d87d56;
+  color: white;
+  font-size: 14px;
+}
+.account__form-inner textarea {
+  resize: none;
+}
+.account__form-inner h3 {
+  margin-top: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #707981;
+}
+.account__heading {
+  margin: 0.83em 0;
+  text-align: center;
+}
+.account__create {
+  background-color: #f69a73;
+  margin: 32px -32px 0;
+  padding: 0;
+  height: 0;
+  /* animation: 1s ease-in appearanceForm; */
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.account__cross {
+  fill: blueviolet;
+  float: right;
+  margin-right: 16px;
+}
+.account__cross:hover {
+  fill: crimson;
+}
+
+.account__input {
+  outline: none;
+}
+
+.account__buttonNews,
+.account__buttonPost {
+  position: relative;
+  display: inline-block;
+}
+.account__notice {
+  background-color: #cff7ff;
+  border-radius: 20px;
+  padding: 16px;
+  display: none;
+  position: absolute;
+  top: 56px;
+  left: 0;
+  box-shadow: 0 0 20px rgba(103, 55, 186, 0.6);
+}
+.notice__message {
+}
+.notice__ok {
+}
+.notice__new {
+}

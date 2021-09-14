@@ -9,12 +9,16 @@
     <link rel="stylesheet" href="./node_modules/reset-css/reset.css" />
     <link rel="stylesheet" href="https://unpkg.com/@csstools/normalize.css" />
     <link rel="stylesheet" href="./styles/common/index.css" />
+    <link rel="stylesheet" href="./styles/account/account.css" />
+    <link rel="stylesheet" href="./styles/common/animations.css" />
+    <link rel="stylesheet" href="./styles/common/checkbox.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@400;700&family=Neucha&display=swap"
       rel="stylesheet"
     />
+    <script defer src="./scripts/account.js"></script>
   </head>
   <body>
     <header class="header">
@@ -61,7 +65,111 @@
     </header>
 
     <main class="account">
-      <section class="account__info"></section>
+      <section class="account__info">
+        <img
+          class="account__img account__infoElement"
+          src="./images/dipper.png"
+          alt="Диппер"
+          width="200"
+          height="200"
+        />
+        <div class="account__text account__infoElement">
+          <div class="acoount__up">
+            <div class="account__loginProf">
+              <h2 class="account__login">@perovaq</h2>
+              <h3 class="account__prof">Frontend-разработчик</h3>
+            </div>
+            <div class="account__data">
+              <div class="account__dataItem dataItem">
+                <img class="dataItem__img" src="./images/cake.svg" alt="Тортик" width="64" />
+                <span class="dataItem__title">6 декабря 1996 года</span>
+              </div>
+              <div class="account__dataItem dataItem">
+                <img
+                  class="dataItem__img"
+                  src="./images/clock.svg"
+                  alt="Часики то тикают!"
+                  width="64"
+                />
+                <span class="dataItem__title">1 сентября в 22:46</span>
+              </div>
+              <div class="account__dataItem dataItem">
+                <img
+                  class="dataItem__img"
+                  src="./images/note.svg"
+                  alt="Давно ли это было?"
+                  width="64"
+                />
+                <span class="dataItem__title">31 июля 2019 года</span>
+              </div>
+            </div>
+          </div>
+          <div class="account__down">
+            <div class="account__buttonNews">
+              <button class="account__button">Твои новости</button>
+              <div id="noticeNews" class="account__notice notice">
+                <h2 class="notice__message">У вас пока нет опубликованных новостей :(</h2>
+              </div>
+            </div>
+            <div class="account__buttonPost">
+              <button class="account__button">Твои статьи</button>
+              <div id="noticePost" class="account__notice notice">
+                <h2 class="notice__message">У вас пока нет опубликованных статей :(</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <button id="creatorPub" class="account__bigButton">Создать публикацию</button>
+
+      <section id="form" class="account__create">
+        <svg
+          id="cross"
+          class="account__cross"
+          xmlns="http://www.w3.org/2000/svg"
+          height="64px"
+          viewBox="0 0 24 24"
+          width="64px"
+          fill="#000000"
+        >
+          <path d="M0 0h24v24H0V0z" fill="none" />
+          <path
+            d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+          />
+        </svg>
+        <form class="account__decor changeDecor">
+          <div class="account__leftDecor">
+            <div class="account__form-left-decoration-top changeDecor"></div>
+            <div class="account__form-left-decoration-mid"></div>
+            <div class="account__form-left-decoration-bot changeDecor"></div>
+          </div>
+
+          <div class="account__rightDecor">
+            <div class="account__form-right-decoration-top changeDecor"></div>
+            <div class="account__form-right-decoration-mid"></div>
+            <div class="account__form-right-decoration-bot changeDecor"></div>
+          </div>
+
+          <div class="account__circle changeDecor"></div>
+          <div class="account__form-inner">
+            <h3 class="account__heading">Создание публикации</h3>
+            <div class="form_toggle">
+              <div class="form_toggle-item item-1">
+                <input id="fid-1" type="radio" name="radio" value="off" checked />
+                <label for="fid-1">Новость</label>
+              </div>
+              <div class="form_toggle-item item-2">
+                <input id="fid-2" type="radio" name="radio" value="on" />
+                <label for="fid-2">Статья</label>
+              </div>
+            </div>
+            <input class="account__input" type="text" placeholder="Теги" />
+            <input class="account__input" type="text" placeholder="Заголовок" />
+            <textarea class="account__input" placeholder="Текст публикации" rows="3"></textarea>
+            <input class="account__input" type="submit" value="Опубликовать" />
+          </div>
+        </form>
+      </section>
     </main>
 
     <footer class="footer">
