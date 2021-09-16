@@ -12,7 +12,11 @@ let noticePost = document.getElementById("noticePost");
 creatorPub.onclick = () => {
   form.style.animation = "1s ease-in appearanceForm";
   form.style.padding = "16px 0";
-  form.style.height = "640px";
+  if (document.body.clientWidth < 709) {
+    form.style.height = "520px";
+  } else {
+    form.style.height = "640px";
+  }
 };
 
 cross.onclick = () => {

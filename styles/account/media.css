@@ -1,0 +1,93 @@
+@media (min-width: 710px) and (max-width: 1023px) {
+  .dataItem__img {
+    display: none;
+  }
+  .dataItem__imgSmall {
+    display: inline-block;
+    margin: 8px;
+  }
+  .account__data {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .account__dataItem {
+    flex-direction: row;
+    margin: 0 0 16px 0;
+  }
+  .account__bigButton {
+    font-size: 70px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 709px) {
+  .dataItem__img {
+    display: none;
+  }
+  .dataItem__imgSmall {
+    display: inline-block;
+    margin: 8px;
+  }
+  .account__data {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .account__dataItem {
+    flex-direction: row;
+    margin: 0 0 16px 0;
+  }
+  .account__bigButton {
+    font-size: 40px;
+  }
+  .account__img {
+    width: 100px;
+    height: 100px;
+  }
+  .account__info {
+    padding: 16px;
+    flex-direction: column;
+  }
+  .account {
+    padding: 16px;
+  }
+  .account__login {
+    font-size: 24px;
+  }
+  .account__prof {
+    font-size: 14px;
+  }
+  .dataItem__title {
+    font-size: 12px;
+  }
+  .account__button {
+    width: 100%;
+    margin: 8px 0;
+    display: block;
+  }
+  .account__buttonNews,
+  .account__buttonPost {
+    display: block;
+  }
+  .account__down {
+    padding: 8px;
+  }
+  .account__notice {
+    z-index: 2;
+  }
+  .account__cross {
+    width: 32px;
+    height: 32px;
+  }
+  .account__decor {
+    margin: 32px 16px 16px;
+  }
+  .account__leftDecor,
+  .account__rightDecor {
+    display: none;
+  }
+  .account__form-inner {
+    padding: 8px;
+  }
+  .account__create {
+    margin: 32px 0;
+  }
+}

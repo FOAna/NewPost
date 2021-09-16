@@ -19,7 +19,7 @@
 .account__text {
   width: 100%;
 }
-.acoount__up {
+.account__up {
   display: flex;
   justify-content: space-between;
 }
@@ -28,10 +28,10 @@
 .account__login {
   font-size: 40px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 .account__prof {
   font-size: 20px;
-  line-height: 50px;
 }
 .account__data {
   display: flex;
@@ -47,6 +47,9 @@
 }
 .dataItem__img {
   margin: 12px;
+}
+.dataItem__imgSmall {
+  display: none;
 }
 .dataItem__title {
 }
@@ -224,10 +227,4 @@
   top: 56px;
   left: 0;
   box-shadow: 0 0 20px rgba(103, 55, 186, 0.6);
-}
-.notice__message {
-}
-.notice__ok {
-}
-.notice__new {
 }
